@@ -54,7 +54,6 @@ Proyecto_TLP26_F2/
 - `fase2/evaluar.py`: único lugar donde se calculan precisión, cobertura, rechazo correcto, clasificación de errores
   (FP, FN, error de etiquetado, sin respuesta), desvío al conocimiento general y costo. Re-ejecutarlo con los mismos logs da tablas idénticas
   (`resultados/entradas_sha256.txt` lista los hashes de las entradas).
-- `fase2/arboles.py`: árboles visuales (`python -m fase2.arboles "el niño que lee un libro duerme"` o `--todas`).
 
 ### Decisiones metodológicas (explicarlas en el informe)
 - **spaCy y BETO no "rechazan"**: la regla aceptar/rechazar de spaCy es una heurística de concordancia (ver docstring de `comparar_nlp.py`);
