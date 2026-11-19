@@ -12,7 +12,7 @@ python -m venv .venv
    # Activar el entorno virtual:
    # En Windows: .venv\Scripts\activate
 pip install -r requirements.txt && python -m spacy download es_core_news_sm
-$env:GEMINI_API_KEY="tu_clave_aqui" clave propia 
+$env:GEMINI_API_KEY="tu_clave_aqui" clave propia, tiene que conseguirlas en https://aistudio.google.com/api-keys (no se comparten por cuestiones de seguridad)
 mkdir -p Proyecto_TLP26_F2/logs && pip freeze > Proyecto_TLP26_F2/logs/pip_freeze.txt   # versiones para el informe
 
 ```
