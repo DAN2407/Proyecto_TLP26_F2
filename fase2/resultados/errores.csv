@@ -1,0 +1,144 @@
+herramienta,referencia,id,oracion,nivel,fenomeno,tipo_error,detalle
+parser,gramatical_es,047,duermen los niños,3,orden VS,falso_negativo,posición 1: se esperaba un determinante o nombre propio y se encontró 'duermen'
+parser,gramatical_es,048,leen un libro,3,sujeto nulo (pro-drop),falso_negativo,posición 1: se esperaba un determinante o nombre propio y se encontró 'leen'
+parser,gramatical_es,049,Ana duerme y Luis corre,3,coordinación de oraciones,falso_negativo,posición 3: sobran palabras a partir de 'y'
+parser,gramatical_es,050,Ana dice que el niño duerme,3,completiva,falso_negativo,"posición 3: 'dice' es transitivo y requiere objeto, pero se encontró 'que'"
+parser,gramatical_es,051,el niño no duerme,3,negación,falso_negativo,posición 3: se esperaba un verbo y se encontró 'no'
+parser,gramatical_es,052,el libro fue leído por Ana,3,pasiva,falso_negativo,posición 3: se esperaba un verbo y se encontró 'fue'
+parser,gramatical_es,053,Ana lo ve,3,clítico,falso_negativo,posición 2: se esperaba un verbo y se encontró 'lo'
+parser,gramatical_es,054,los niños duermen y las niñas corren,3,coordinación de oraciones,falso_negativo,posición 4: sobran palabras a partir de 'y'
+parser,gramatical_es,055,Ana corre más rápido que Luis,3,comparativa,falso_negativo,posición 3: sobran palabras a partir de 'más'
+parser,gramatical_es,056,el niño lee,3,objeto implícito (verbo T sin objeto),falso_negativo,"posición 4: 'lee' es transitivo y requiere objeto, pero se encontró el fin de la oración"
+parser,gramatical_es,057,Ana está durmiendo,3,perífrasis progresiva,falso_negativo,posición 2: se esperaba un verbo y se encontró 'está'
+parser,gramatical_es,058,"Ana, Luis y Marta son médica, ingeniero y abogada, respectivamente",3,dependencias cruzadas,falso_negativo,posición 2: se esperaba un verbo y se encontró 'Luis'
+parser,gramatical_es,059,Ana dice que Luis quiere que el niño duerma,3,completiva anidada (subordinación anidada),falso_negativo,"posición 3: 'dice' es transitivo y requiere objeto, pero se encontró 'que'"
+parser,gramatical_es,060,el niño que dice que el perro corre duerme,3,completiva dentro de relativa,falso_negativo,"posición 5: 'dice' es transitivo y requiere objeto, pero se encontró 'que'"
+spacy,ambas,007,un perro come,1,simple,error_de_etiquetado,oro=un/DET perro/NOUN come/VERB | pred=DET NOUN PROPN
+spacy,ambas,017,el perro comió,1,simple,error_de_etiquetado,oro=el/DET perro/NOUN comió/VERB | pred=DET PROPN VERB
+spacy,ambas,033,el perro pequeño come un libro,2,adjetivo + objeto,error_de_etiquetado,oro=el/DET perro/NOUN pequeño/ADJ come/VERB un/DET libro/NOUN | pred=DET PROPN ADJ VERB DET NOUN
+spacy,esperado_gramatica,043,el perro pequeña corre,2,concordancia N-Adj género,falso_positivo,
+spacy,esperado_gramatica,044,las niñas que corre duermen,2,concordancia en relativa,falso_positivo,
+spacy,esperado_gramatica,045,Ana duermen,2,concordancia PN-verbo,falso_positivo,
+spacy,esperado_gramatica,046,el niño duerme la casa,2,verbo intransitivo con objeto,falso_positivo,
+spacy,esperado_gramatica,047,duermen los niños,3,orden VS,falso_positivo,
+spacy,esperado_gramatica,048,leen un libro,3,sujeto nulo (pro-drop),falso_positivo,
+spacy,esperado_gramatica,049,Ana duerme y Luis corre,3,coordinación de oraciones,falso_positivo,
+spacy,esperado_gramatica,050,Ana dice que el niño duerme,3,completiva,falso_positivo,
+spacy,esperado_gramatica,051,el niño no duerme,3,negación,falso_positivo,
+spacy,esperado_gramatica,052,el libro fue leído por Ana,3,pasiva,falso_positivo,
+spacy,esperado_gramatica,053,Ana lo ve,3,clítico,falso_positivo,
+spacy,esperado_gramatica,054,los niños duermen y las niñas corren,3,coordinación de oraciones,falso_positivo,
+spacy,esperado_gramatica,055,Ana corre más rápido que Luis,3,comparativa,falso_positivo,
+spacy,esperado_gramatica,056,el niño lee,3,objeto implícito (verbo T sin objeto),falso_positivo,
+spacy,esperado_gramatica,057,Ana está durmiendo,3,perífrasis progresiva,falso_positivo,
+spacy,esperado_gramatica,058,"Ana, Luis y Marta son médica, ingeniero y abogada, respectivamente",3,dependencias cruzadas,falso_positivo,
+spacy,esperado_gramatica,059,Ana dice que Luis quiere que el niño duerma,3,completiva anidada (subordinación anidada),falso_positivo,
+spacy,esperado_gramatica,060,el niño que dice que el perro corre duerme,3,completiva dentro de relativa,falso_positivo,
+spacy,gramatical_es,043,el perro pequeña corre,2,concordancia N-Adj género,falso_positivo,
+spacy,gramatical_es,044,las niñas que corre duermen,2,concordancia en relativa,falso_positivo,
+spacy,gramatical_es,045,Ana duermen,2,concordancia PN-verbo,falso_positivo,
+spacy,gramatical_es,046,el niño duerme la casa,2,verbo intransitivo con objeto,falso_positivo,
+hf,esperado_gramatica,002,la niña corre,1,simple,falso_negativo,pll_norm=-5.659 (umbral -4.882)
+hf,esperado_gramatica,004,las niñas corren,1,simple,falso_negativo,pll_norm=-6.559 (umbral -4.882)
+hf,esperado_gramatica,005,Ana duerme,1,simple,falso_negativo,pll_norm=-9.877 (umbral -4.882)
+hf,esperado_gramatica,006,Luis corre,1,simple,falso_negativo,pll_norm=-12.206 (umbral -4.882)
+hf,esperado_gramatica,007,un perro come,1,simple,falso_negativo,pll_norm=-5.357 (umbral -4.882)
+hf,esperado_gramatica,008,una mujer duerme,1,simple,falso_negativo,pll_norm=-5.883 (umbral -4.882)
+hf,esperado_gramatica,022,la niña feliz corre,2,adjetivo invariable,falso_negativo,pll_norm=-6.261 (umbral -4.882)
+hf,esperado_gramatica,023,los perros pequeños corren,2,adjetivo plural,falso_negativo,pll_norm=-6.160 (umbral -4.882)
+hf,esperado_gramatica,025,el niño corre rápidamente,2,adverbio,falso_negativo,pll_norm=-5.003 (umbral -4.882)
+hf,esperado_gramatica,027,Ana corrió ayer,2,adverbio + pretérito,falso_negativo,pll_norm=-9.582 (umbral -4.882)
+hf,esperado_gramatica,034,Luis leyó un libro pequeño ayer,2,objeto con adjetivo + adverbio,falso_negativo,pll_norm=-6.021 (umbral -4.882)
+hf,esperado_gramatica,047,duermen los niños,3,orden VS,falso_positivo,pll_norm=-4.759 (umbral -4.882)
+hf,esperado_gramatica,048,leen un libro,3,sujeto nulo (pro-drop),falso_positivo,pll_norm=-3.018 (umbral -4.882)
+hf,esperado_gramatica,050,Ana dice que el niño duerme,3,completiva,falso_positivo,pll_norm=-3.773 (umbral -4.882)
+hf,esperado_gramatica,051,el niño no duerme,3,negación,falso_positivo,pll_norm=-2.728 (umbral -4.882)
+hf,esperado_gramatica,052,el libro fue leído por Ana,3,pasiva,falso_positivo,pll_norm=-3.723 (umbral -4.882)
+hf,esperado_gramatica,054,los niños duermen y las niñas corren,3,coordinación de oraciones,falso_positivo,pll_norm=-1.747 (umbral -4.882)
+hf,esperado_gramatica,055,Ana corre más rápido que Luis,3,comparativa,falso_positivo,pll_norm=-3.148 (umbral -4.882)
+hf,esperado_gramatica,057,Ana está durmiendo,3,perífrasis progresiva,falso_positivo,pll_norm=-4.710 (umbral -4.882)
+hf,esperado_gramatica,058,"Ana, Luis y Marta son médica, ingeniero y abogada, respectivamente",3,dependencias cruzadas,falso_positivo,pll_norm=-3.013 (umbral -4.882)
+hf,esperado_gramatica,059,Ana dice que Luis quiere que el niño duerma,3,completiva anidada (subordinación anidada),falso_positivo,pll_norm=-1.653 (umbral -4.882)
+hf,esperado_gramatica,060,el niño que dice que el perro corre duerme,3,completiva dentro de relativa,falso_positivo,pll_norm=-4.589 (umbral -4.882)
+hf,gramatical_es,002,la niña corre,1,simple,falso_negativo,pll_norm=-5.659 (umbral -4.882)
+hf,gramatical_es,004,las niñas corren,1,simple,falso_negativo,pll_norm=-6.559 (umbral -4.882)
+hf,gramatical_es,005,Ana duerme,1,simple,falso_negativo,pll_norm=-9.877 (umbral -4.882)
+hf,gramatical_es,006,Luis corre,1,simple,falso_negativo,pll_norm=-12.206 (umbral -4.882)
+hf,gramatical_es,007,un perro come,1,simple,falso_negativo,pll_norm=-5.357 (umbral -4.882)
+hf,gramatical_es,008,una mujer duerme,1,simple,falso_negativo,pll_norm=-5.883 (umbral -4.882)
+hf,gramatical_es,022,la niña feliz corre,2,adjetivo invariable,falso_negativo,pll_norm=-6.261 (umbral -4.882)
+hf,gramatical_es,023,los perros pequeños corren,2,adjetivo plural,falso_negativo,pll_norm=-6.160 (umbral -4.882)
+hf,gramatical_es,025,el niño corre rápidamente,2,adverbio,falso_negativo,pll_norm=-5.003 (umbral -4.882)
+hf,gramatical_es,027,Ana corrió ayer,2,adverbio + pretérito,falso_negativo,pll_norm=-9.582 (umbral -4.882)
+hf,gramatical_es,034,Luis leyó un libro pequeño ayer,2,objeto con adjetivo + adverbio,falso_negativo,pll_norm=-6.021 (umbral -4.882)
+hf,gramatical_es,049,Ana duerme y Luis corre,3,coordinación de oraciones,falso_negativo,pll_norm=-4.892 (umbral -4.882)
+hf,gramatical_es,053,Ana lo ve,3,clítico,falso_negativo,pll_norm=-5.680 (umbral -4.882)
+hf,gramatical_es,056,el niño lee,3,objeto implícito (verbo T sin objeto),falso_negativo,pll_norm=-5.311 (umbral -4.882)
+llm_zero,ambas,001,el niño duerme,1,simple,error_de_etiquetado,oro=el/DET niño/NOUN duerme/VERB | pred=(sin etiquetas)
+llm_zero,ambas,002,la niña corre,1,simple,error_de_etiquetado,oro=la/DET niña/NOUN corre/VERB | pred=(sin etiquetas)
+llm_zero,ambas,003,los perros duermen,1,simple,error_de_etiquetado,oro=los/DET perros/NOUN duermen/VERB | pred=(sin etiquetas)
+llm_zero,ambas,004,las niñas corren,1,simple,error_de_etiquetado,oro=las/DET niñas/NOUN corren/VERB | pred=(sin etiquetas)
+llm_zero,ambas,005,Ana duerme,1,simple,error_de_etiquetado,oro=Ana/PROPN duerme/VERB | pred=? VERB
+llm_zero,ambas,007,un perro come,1,simple,error_de_etiquetado,oro=un/DET perro/NOUN come/VERB | pred=(sin etiquetas)
+llm_zero,ambas,008,una mujer duerme,1,simple,error_de_etiquetado,oro=una/DET mujer/NOUN duerme/VERB | pred=(sin etiquetas)
+llm_zero,ambas,010,la niña ve la casa,1,simple,error_de_etiquetado,oro=la/DET niña/NOUN ve/VERB la/DET casa/NOUN | pred=(sin etiquetas)
+llm_zero,ambas,011,los hombres leen unos libros,1,simple,error_de_etiquetado,oro=los/DET hombres/NOUN leen/VERB unos/DET libros/NOUN | pred=(sin etiquetas)
+llm_zero,ambas,012,las mujeres ven un perro,1,simple,error_de_etiquetado,oro=las/DET mujeres/NOUN ven/VERB un/DET perro/NOUN | pred=(sin etiquetas)
+llm_zero,ambas,013,Ana lee un libro,1,simple,error_de_etiquetado,oro=Ana/PROPN lee/VERB un/DET libro/NOUN | pred=? VERB DET NOUN
+llm_zero,ambas,014,Luis ve a Ana,1,simple,error_de_etiquetado,oro=Luis/PROPN ve/VERB a/ADP Ana/PROPN | pred=(sin etiquetas)
+llm_zero,ambas,015,el niño durmió,1,simple,error_de_etiquetado,oro=el/DET niño/NOUN durmió/VERB | pred=(sin etiquetas)
+llm_zero,ambas,017,el perro comió,1,simple,error_de_etiquetado,oro=el/DET perro/NOUN comió/VERB | pred=(sin etiquetas)
+llm_zero,ambas,018,Marta leyó un libro,1,simple,error_de_etiquetado,oro=Marta/PROPN leyó/VERB un/DET libro/NOUN | pred=? VERB DET NOUN
+llm_zero,ambas,019,los niños vieron la casa,1,simple,error_de_etiquetado,oro=los/DET niños/NOUN vieron/VERB la/DET casa/NOUN | pred=(sin etiquetas)
+llm_zero,ambas,020,la mujer vio a Luis,1,simple,error_de_etiquetado,oro=la/DET mujer/NOUN vio/VERB a/ADP Luis/PROPN | pred=(sin etiquetas)
+llm_zero,ambas,021,el niño pequeño duerme,2,adjetivo,error_de_etiquetado,oro=el/DET niño/NOUN pequeño/ADJ duerme/VERB | pred=(sin etiquetas)
+llm_zero,ambas,022,la niña feliz corre,2,adjetivo invariable,error_de_etiquetado,oro=la/DET niña/NOUN feliz/ADJ corre/VERB | pred=(sin etiquetas)
+llm_zero,ambas,023,los perros pequeños corren,2,adjetivo plural,error_de_etiquetado,oro=los/DET perros/NOUN pequeños/ADJ corren/VERB | pred=(sin etiquetas)
+llm_zero,ambas,025,el niño corre rápidamente,2,adverbio,error_de_etiquetado,oro=el/DET niño/NOUN corre/VERB rápidamente/ADV | pred=(sin etiquetas)
+llm_zero,ambas,027,Ana corrió ayer,2,adverbio + pretérito,error_de_etiquetado,oro=Ana/PROPN corrió/VERB ayer/ADV | pred=(sin etiquetas)
+llm_zero,ambas,028,el niño lee el libro en la casa,2,SP (ambiguo),error_de_etiquetado,oro=el/DET niño/NOUN lee/VERB el/DET libro/NOUN en/ADP la/DET casa/NOUN | pred=(sin etiquetas)
+llm_zero,ambas,029,el hombre ve a la mujer con el telescopio,2,SP (ambiguo) + a personal,error_de_etiquetado,oro=el/DET hombre/NOUN ve/VERB a/ADP la/DET mujer/NOUN con/ADP el/DET telescopio/NOUN | pred=(sin etiquetas)
+llm_zero,ambas,030,el niño que lee un libro duerme,2,relativa,error_de_etiquetado,oro=el/DET niño/NOUN que/SCONJ lee/VERB un/DET libro/NOUN duerme/VERB | pred=(sin etiquetas)
+llm_zero,ambas,031,los niños que leen un libro duermen,2,relativa + concordancia a distancia,sin_respuesta,"sin JSON válido: {""acepta"": true, ""regla_violada"": """", ""arbol"": ""[S [SN [Det los] [N niños] [Rel [que] [SV [V leen] [Obj [SN [Det un] [N "
+llm_zero,ambas,032,la niña que corre ve a Ana,2,relativa + a personal,error_de_etiquetado,oro=la/DET niña/NOUN que/SCONJ corre/VERB ve/VERB a/ADP Ana/PROPN | pred=DET NOUN SCONJ VERB VERB PROPN
+llm_zero,ambas,034,Luis leyó un libro pequeño ayer,2,objeto con adjetivo + adverbio,error_de_etiquetado,oro=Luis/PROPN leyó/VERB un/DET libro/NOUN pequeño/ADJ ayer/ADV | pred=(sin etiquetas)
+llm_zero,ambas,036,el hombre feliz ve a la mujer feliz,2,adjetivo invariable + a personal,error_de_etiquetado,oro=el/DET hombre/NOUN feliz/ADJ ve/VERB a/ADP la/DET mujer/NOUN feliz/ADJ | pred=DET NOUN ADJ VERB DET NOUN ADJ
+llm_zero,ambas,037,los perros que corren duermen,2,relativa intransitiva,error_de_etiquetado,oro=los/DET perros/NOUN que/SCONJ corren/VERB duermen/VERB | pred=(sin etiquetas)
+llm_zero,ambas,038,Ana ve a la niña pequeña,2,a personal + adjetivo,error_de_etiquetado,oro=Ana/PROPN ve/VERB a/ADP la/DET niña/NOUN pequeña/ADJ | pred=(sin etiquetas)
+llm_zero,ambas,039,el niño que ve un perro que corre duerme,2,relativa anidada (recursión),error_de_etiquetado,oro=el/DET niño/NOUN que/SCONJ ve/VERB un/DET perro/NOUN que/SCONJ corre/VERB duerme/VERB | pred=(sin etiquetas)
+llm_zero,esperado_gramatica,047,duermen los niños,3,orden VS,falso_positivo,
+llm_zero,esperado_gramatica,050,Ana dice que el niño duerme,3,completiva,falso_positivo,
+llm_zero,esperado_gramatica,056,el niño lee,3,objeto implícito (verbo T sin objeto),falso_positivo,
+llm_zero,esperado_gramatica,059,Ana dice que Luis quiere que el niño duerma,3,completiva anidada (subordinación anidada),falso_positivo,
+llm_zero,esperado_gramatica,060,el niño que dice que el perro corre duerme,3,completiva dentro de relativa,falso_positivo,
+llm_zero,gramatical_es,048,leen un libro,3,sujeto nulo (pro-drop),falso_negativo,S -> SN SV
+llm_zero,gramatical_es,049,Ana duerme y Luis corre,3,coordinación de oraciones,falso_negativo,S
+llm_zero,gramatical_es,051,el niño no duerme,3,negación,falso_negativo,Léxico: la palabra 'no' no existe en el léxico proporcionado.
+llm_zero,gramatical_es,052,el libro fue leído por Ana,3,pasiva,falso_negativo,"No se puede derivar con las reglas y léxico dados (palabras 'fue', 'por' no existen en el léxico)"
+llm_zero,gramatical_es,053,Ana lo ve,3,clítico,falso_negativo,Léxico: 'lo' no existe en la categoría Det ni en ninguna otra categoría del léxico proporcionado.
+llm_zero,gramatical_es,054,los niños duermen y las niñas corren,3,coordinación de oraciones,falso_negativo,1
+llm_zero,gramatical_es,055,Ana corre más rápido que Luis,3,comparativa,falso_negativo,"La palabra 'más' no está en el léxico de adverbios permitidos (Adv -> ayer, mucho, rápidamente)."
+llm_zero,gramatical_es,057,Ana está durmiendo,3,perífrasis progresiva,falso_negativo,Léxico: 'está' no existe en las reglas o léxico de la gramática.
+llm_zero,gramatical_es,058,"Ana, Luis y Marta son médica, ingeniero y abogada, respectivamente",3,dependencias cruzadas,falso_negativo,No existen otras reglas: cualquier oración que no se derive de estas reglas debe rechazarse.
+llm_few,ambas,013,Ana lee un libro,1,simple,sin_respuesta,"sin JSON válido: {""acepta"": true, ""regla_violada"": """", ""arbol"": ""(S (SN (PN Ana)) (SV (V lee) (Obj (SN (Det un) (N libro))))}""}"
+llm_few,ambas,014,Luis ve a Ana,1,simple,error_de_etiquetado,oro=Luis/PROPN ve/VERB a/ADP Ana/PROPN | pred=PROPN VERB ? PROPN
+llm_few,ambas,020,la mujer vio a Luis,1,simple,error_de_etiquetado,oro=la/DET mujer/NOUN vio/VERB a/ADP Luis/PROPN | pred=DET NOUN VERB ? PROPN
+llm_few,ambas,029,el hombre ve a la mujer con el telescopio,2,SP (ambiguo) + a personal,error_de_etiquetado,oro=el/DET hombre/NOUN ve/VERB a/ADP la/DET mujer/NOUN con/ADP el/DET telescopio/NOUN | pred=DET NOUN VERB ? DET NOUN ADP DET NOUN
+llm_few,ambas,032,la niña que corre ve a Ana,2,relativa + a personal,error_de_etiquetado,oro=la/DET niña/NOUN que/SCONJ corre/VERB ve/VERB a/ADP Ana/PROPN | pred=DET NOUN SCONJ VERB VERB ? PROPN
+llm_few,ambas,034,Luis leyó un libro pequeño ayer,2,objeto con adjetivo + adverbio,sin_respuesta,"sin JSON válido: {""acepta"": true, ""regla_violada"": """", ""arbol"": ""(S (SN (PN Luis)) (SV (V leyó) (Obj (SN (Det un) (N libro) (Adj pequeño)"
+llm_few,ambas,036,el hombre feliz ve a la mujer feliz,2,adjetivo invariable + a personal,error_de_etiquetado,oro=el/DET hombre/NOUN feliz/ADJ ve/VERB a/ADP la/DET mujer/NOUN feliz/ADJ | pred=DET NOUN ADJ VERB ? DET NOUN ADJ
+llm_few,ambas,038,Ana ve a la niña pequeña,2,a personal + adjetivo,error_de_etiquetado,oro=Ana/PROPN ve/VERB a/ADP la/DET niña/NOUN pequeña/ADJ | pred=PROPN VERB ? DET NOUN ADJ
+llm_few,esperado_gramatica,050,Ana dice que el niño duerme,3,completiva,falso_positivo,
+llm_few,esperado_gramatica,056,el niño lee,3,objeto implícito (verbo T sin objeto),falso_positivo,
+llm_few,esperado_gramatica,060,el niño que dice que el perro corre duerme,3,completiva dentro de relativa,falso_positivo,
+llm_few,gramatical_es,047,duermen los niños,3,orden VS,falso_negativo,S -> SN SV: la oración no empieza con SN
+llm_few,gramatical_es,048,leen un libro,3,sujeto nulo (pro-drop),falso_negativo,S -> SN SV: la oración no empieza con SN
+llm_few,gramatical_es,049,Ana duerme y Luis corre,3,coordinación de oraciones,falso_negativo,S -> SN SV: la oración no se deriva de las reglas (contiene conjunción no permitida)
+llm_few,gramatical_es,051,el niño no duerme,3,negación,falso_negativo,Léxico: 'no' no pertenece a ninguna categoría léxica permitida
+llm_few,gramatical_es,052,el libro fue leído por Ana,3,pasiva,falso_negativo,S -> SN SV: 'fue' no está en el léxico
+llm_few,gramatical_es,053,Ana lo ve,3,clítico,falso_negativo,"Léxico: 'lo' no existe en la categoría Det, N, PN, Adj, V, Adv, Prep o 'que'"
+llm_few,gramatical_es,054,los niños duermen y las niñas corren,3,coordinación de oraciones,falso_negativo,S -> SN SV: la oración contiene 'y' que no está en la gramática
+llm_few,gramatical_es,055,Ana corre más rápido que Luis,3,comparativa,falso_negativo,S -> SN SV: 'más' y 'rápido' no pertenecen a ninguna categoría léxica permitida o regla de Rel
+llm_few,gramatical_es,057,Ana está durmiendo,3,perífrasis progresiva,falso_negativo,Léxico: 'está' y 'durmiendo' no existen en la gramática
+llm_few,gramatical_es,058,"Ana, Luis y Marta son médica, ingeniero y abogada, respectivamente",3,dependencias cruzadas,falso_negativo,S -> SN SV: la oración no se deriva de la gramática
+llm_few,gramatical_es,059,Ana dice que Luis quiere que el niño duerma,3,completiva anidada (subordinación anidada),falso_negativo,Léxico: 'duerma' no está en la lista de verbos permitidos

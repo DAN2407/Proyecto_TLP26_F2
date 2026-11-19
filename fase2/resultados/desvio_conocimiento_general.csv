@@ -1,0 +1,6 @@
+herramienta,n_fuera_de_gramatica,acepta_fuera_de_gramatica,n_en_gramatica,rechaza_en_gramatica,n_agramaticales,rechaza_agramaticales
+parser,14,0.0,39,0.0,7,1.0
+spacy,14,1.0,39,0.0,7,0.429
+hf,14,0.786,39,0.282,7,1.0
+llm_zero,14,0.357,38,0.0,7,1.0
+llm_few,14,0.214,37,0.0,7,1.0

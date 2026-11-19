@@ -1,0 +1,11 @@
+herramienta,referencia,falsos_positivos,falsos_negativos,errores_etiquetado,sin_respuesta
+parser,esperado_gramatica,0,0,0,0
+parser,gramatical_es,0,14,0,0
+spacy,esperado_gramatica,18,0,3,0
+spacy,gramatical_es,4,0,3,0
+hf,esperado_gramatica,11,11,,0
+hf,gramatical_es,0,14,,0
+llm_zero,esperado_gramatica,5,0,31,1
+llm_zero,gramatical_es,0,9,31,1
+llm_few,esperado_gramatica,3,0,6,2
+llm_few,gramatical_es,0,11,6,2

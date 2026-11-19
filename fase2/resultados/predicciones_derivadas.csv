@@ -1,0 +1,61 @@
+id,oracion,nivel,esperado_gramatica,gramatical_es,parser,spacy,hf,llm_zero,llm_few
+001,el niño duerme,1,1,1,1,1,1,1,1
+002,la niña corre,1,1,1,1,1,0,1,1
+003,los perros duermen,1,1,1,1,1,1,1,1
+004,las niñas corren,1,1,1,1,1,0,1,1
+005,Ana duerme,1,1,1,1,1,0,1,1
+006,Luis corre,1,1,1,1,1,0,1,1
+007,un perro come,1,1,1,1,1,0,1,1
+008,una mujer duerme,1,1,1,1,1,0,1,1
+009,el niño lee un libro,1,1,1,1,1,1,1,1
+010,la niña ve la casa,1,1,1,1,1,1,1,1
+011,los hombres leen unos libros,1,1,1,1,1,1,1,1
+012,las mujeres ven un perro,1,1,1,1,1,1,1,1
+013,Ana lee un libro,1,1,1,1,1,1,1,
+014,Luis ve a Ana,1,1,1,1,1,1,1,1
+015,el niño durmió,1,1,1,1,1,1,1,1
+016,las niñas corrieron,1,1,1,1,1,1,1,1
+017,el perro comió,1,1,1,1,1,1,1,1
+018,Marta leyó un libro,1,1,1,1,1,1,1,1
+019,los niños vieron la casa,1,1,1,1,1,1,1,1
+020,la mujer vio a Luis,1,1,1,1,1,1,1,1
+021,el niño pequeño duerme,2,1,1,1,1,1,1,1
+022,la niña feliz corre,2,1,1,1,1,0,1,1
+023,los perros pequeños corren,2,1,1,1,1,0,1,1
+024,las niñas felices duermen,2,1,1,1,1,1,1,1
+025,el niño corre rápidamente,2,1,1,1,1,0,1,1
+026,la niña duerme mucho,2,1,1,1,1,1,1,1
+027,Ana corrió ayer,2,1,1,1,1,0,1,1
+028,el niño lee el libro en la casa,2,1,1,1,1,1,1,1
+029,el hombre ve a la mujer con el telescopio,2,1,1,1,1,1,1,1
+030,el niño que lee un libro duerme,2,1,1,1,1,1,1,1
+031,los niños que leen un libro duermen,2,1,1,1,1,1,,1
+032,la niña que corre ve a Ana,2,1,1,1,1,1,1,1
+033,el perro pequeño come un libro,2,1,1,1,1,1,1,1
+034,Luis leyó un libro pequeño ayer,2,1,1,1,1,0,1,
+035,las niñas leen unos libros rojos en la casa,2,1,1,1,1,1,1,1
+036,el hombre feliz ve a la mujer feliz,2,1,1,1,1,1,1,1
+037,los perros que corren duermen,2,1,1,1,1,1,1,1
+038,Ana ve a la niña pequeña,2,1,1,1,1,1,1,1
+039,el niño que ve un perro que corre duerme,2,1,1,1,1,1,1,1
+040,los niño duermen,2,0,0,0,0,0,0,0
+041,el niña duerme,2,0,0,0,0,0,0,0
+042,los niños duerme,2,0,0,0,0,0,0,0
+043,el perro pequeña corre,2,0,0,0,1,0,0,0
+044,las niñas que corre duermen,2,0,0,0,1,0,0,0
+045,Ana duermen,2,0,0,0,1,0,0,0
+046,el niño duerme la casa,2,0,0,0,1,0,0,0
+047,duermen los niños,3,0,1,0,1,1,1,0
+048,leen un libro,3,0,1,0,1,1,0,0
+049,Ana duerme y Luis corre,3,0,1,0,1,0,0,0
+050,Ana dice que el niño duerme,3,0,1,0,1,1,1,1
+051,el niño no duerme,3,0,1,0,1,1,0,0
+052,el libro fue leído por Ana,3,0,1,0,1,1,0,0
+053,Ana lo ve,3,0,1,0,1,0,0,0
+054,los niños duermen y las niñas corren,3,0,1,0,1,1,0,0
+055,Ana corre más rápido que Luis,3,0,1,0,1,1,0,0
+056,el niño lee,3,0,1,0,1,0,1,1
+057,Ana está durmiendo,3,0,1,0,1,1,0,0
+058,"Ana, Luis y Marta son médica, ingeniero y abogada, respectivamente",3,0,1,0,1,1,0,0
+059,Ana dice que Luis quiere que el niño duerma,3,0,1,0,1,1,1,0
+060,el niño que dice que el perro corre duerme,3,0,1,0,1,1,1,1

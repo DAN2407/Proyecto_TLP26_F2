@@ -1,0 +1,5 @@
+herramienta,oraciones_evaluadas,oraciones_con_error,exactitud_oracion,tokens_oro,tokens_correctos,exactitud_token
+parser,39,0,1.0,187,187,1.0
+spacy,39,3,0.923,187,184,0.984
+llm_zero,38,31,0.184,180,40,0.222
+llm_few,37,6,0.838,177,171,0.966

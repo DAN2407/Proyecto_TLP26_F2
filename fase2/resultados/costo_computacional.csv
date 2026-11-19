@@ -1,0 +1,6 @@
+herramienta,oraciones,tiempo_total_s,tiempo_medio_s,tokens_entrada,tokens_salida,modelo
+parser,60,0.001,0.0,,,
+spacy,60,0.262,0.0044,,,
+hf,60,12.315,0.2052,,,
+llm_zero,60,0,,47377,2732,gemini-3.5-flash-lite
+llm_few,60,0,,66157,2664,gemini-3.5-flash-lite

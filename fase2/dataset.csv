@@ -1,0 +1,61 @@
+id,oracion,nivel,gramatical_es,esperado_gramatica,fenomeno,split,upos_oro
+001,el niño duerme,1,1,1,simple,dev,el/DET niño/NOUN duerme/VERB
+002,la niña corre,1,1,1,simple,test,la/DET niña/NOUN corre/VERB
+003,los perros duermen,1,1,1,simple,dev,los/DET perros/NOUN duermen/VERB
+004,las niñas corren,1,1,1,simple,test,las/DET niñas/NOUN corren/VERB
+005,Ana duerme,1,1,1,simple,dev,Ana/PROPN duerme/VERB
+006,Luis corre,1,1,1,simple,test,Luis/PROPN corre/VERB
+007,un perro come,1,1,1,simple,dev,un/DET perro/NOUN come/VERB
+008,una mujer duerme,1,1,1,simple,dev,una/DET mujer/NOUN duerme/VERB
+009,el niño lee un libro,1,1,1,simple,test,el/DET niño/NOUN lee/VERB un/DET libro/NOUN
+010,la niña ve la casa,1,1,1,simple,dev,la/DET niña/NOUN ve/VERB la/DET casa/NOUN
+011,los hombres leen unos libros,1,1,1,simple,dev,los/DET hombres/NOUN leen/VERB unos/DET libros/NOUN
+012,las mujeres ven un perro,1,1,1,simple,test,las/DET mujeres/NOUN ven/VERB un/DET perro/NOUN
+013,Ana lee un libro,1,1,1,simple,dev,Ana/PROPN lee/VERB un/DET libro/NOUN
+014,Luis ve a Ana,1,1,1,simple,dev,Luis/PROPN ve/VERB a/ADP Ana/PROPN
+015,el niño durmió,1,1,1,simple,test,el/DET niño/NOUN durmió/VERB
+016,las niñas corrieron,1,1,1,simple,dev,las/DET niñas/NOUN corrieron/VERB
+017,el perro comió,1,1,1,simple,dev,el/DET perro/NOUN comió/VERB
+018,Marta leyó un libro,1,1,1,simple,test,Marta/PROPN leyó/VERB un/DET libro/NOUN
+019,los niños vieron la casa,1,1,1,simple,dev,los/DET niños/NOUN vieron/VERB la/DET casa/NOUN
+020,la mujer vio a Luis,1,1,1,simple,dev,la/DET mujer/NOUN vio/VERB a/ADP Luis/PROPN
+021,el niño pequeño duerme,2,1,1,adjetivo,dev,el/DET niño/NOUN pequeño/ADJ duerme/VERB
+022,la niña feliz corre,2,1,1,adjetivo invariable,dev,la/DET niña/NOUN feliz/ADJ corre/VERB
+023,los perros pequeños corren,2,1,1,adjetivo plural,test,los/DET perros/NOUN pequeños/ADJ corren/VERB
+024,las niñas felices duermen,2,1,1,adjetivo plural,dev,las/DET niñas/NOUN felices/ADJ duermen/VERB
+025,el niño corre rápidamente,2,1,1,adverbio,dev,el/DET niño/NOUN corre/VERB rápidamente/ADV
+026,la niña duerme mucho,2,1,1,adverbio,test,la/DET niña/NOUN duerme/VERB mucho/ADV
+027,Ana corrió ayer,2,1,1,adverbio + pretérito,dev,Ana/PROPN corrió/VERB ayer/ADV
+028,el niño lee el libro en la casa,2,1,1,SP (ambiguo),dev,el/DET niño/NOUN lee/VERB el/DET libro/NOUN en/ADP la/DET casa/NOUN
+029,el hombre ve a la mujer con el telescopio,2,1,1,SP (ambiguo) + a personal,test,el/DET hombre/NOUN ve/VERB a/ADP la/DET mujer/NOUN con/ADP el/DET telescopio/NOUN
+030,el niño que lee un libro duerme,2,1,1,relativa,dev,el/DET niño/NOUN que/SCONJ lee/VERB un/DET libro/NOUN duerme/VERB
+031,los niños que leen un libro duermen,2,1,1,relativa + concordancia a distancia,test,los/DET niños/NOUN que/SCONJ leen/VERB un/DET libro/NOUN duermen/VERB
+032,la niña que corre ve a Ana,2,1,1,relativa + a personal,dev,la/DET niña/NOUN que/SCONJ corre/VERB ve/VERB a/ADP Ana/PROPN
+033,el perro pequeño come un libro,2,1,1,adjetivo + objeto,dev,el/DET perro/NOUN pequeño/ADJ come/VERB un/DET libro/NOUN
+034,Luis leyó un libro pequeño ayer,2,1,1,objeto con adjetivo + adverbio,test,Luis/PROPN leyó/VERB un/DET libro/NOUN pequeño/ADJ ayer/ADV
+035,las niñas leen unos libros rojos en la casa,2,1,1,adjetivo + SP,dev,las/DET niñas/NOUN leen/VERB unos/DET libros/NOUN rojos/ADJ en/ADP la/DET casa/NOUN
+036,el hombre feliz ve a la mujer feliz,2,1,1,adjetivo invariable + a personal,dev,el/DET hombre/NOUN feliz/ADJ ve/VERB a/ADP la/DET mujer/NOUN feliz/ADJ
+037,los perros que corren duermen,2,1,1,relativa intransitiva,dev,los/DET perros/NOUN que/SCONJ corren/VERB duermen/VERB
+038,Ana ve a la niña pequeña,2,1,1,a personal + adjetivo,test,Ana/PROPN ve/VERB a/ADP la/DET niña/NOUN pequeña/ADJ
+039,el niño que ve un perro que corre duerme,2,1,1,relativa anidada (recursión),dev,el/DET niño/NOUN que/SCONJ ve/VERB un/DET perro/NOUN que/SCONJ corre/VERB duerme/VERB
+040,los niño duermen,2,0,0,concordancia Det-N número,dev,
+041,el niña duerme,2,0,0,concordancia Det-N género,dev,
+042,los niños duerme,2,0,0,concordancia sujeto-verbo,test,
+043,el perro pequeña corre,2,0,0,concordancia N-Adj género,dev,
+044,las niñas que corre duermen,2,0,0,concordancia en relativa,test,
+045,Ana duermen,2,0,0,concordancia PN-verbo,dev,
+046,el niño duerme la casa,2,0,0,verbo intransitivo con objeto,dev,
+047,duermen los niños,3,1,0,orden VS,dev,
+048,leen un libro,3,1,0,sujeto nulo (pro-drop),dev,
+049,Ana duerme y Luis corre,3,1,0,coordinación de oraciones,test,
+050,Ana dice que el niño duerme,3,1,0,completiva,dev,
+051,el niño no duerme,3,1,0,negación,test,
+052,el libro fue leído por Ana,3,1,0,pasiva,dev,
+053,Ana lo ve,3,1,0,clítico,dev,
+054,los niños duermen y las niñas corren,3,1,0,coordinación de oraciones,test,
+055,Ana corre más rápido que Luis,3,1,0,comparativa,dev,
+056,el niño lee,3,1,0,objeto implícito (verbo T sin objeto),dev,
+057,Ana está durmiendo,3,1,0,perífrasis progresiva,dev,
+058,"Ana, Luis y Marta son médica, ingeniero y abogada, respectivamente",3,1,0,dependencias cruzadas,dev,
+059,Ana dice que Luis quiere que el niño duerma,3,1,0,completiva anidada (subordinación anidada),dev,
+060,el niño que dice que el perro corre duerme,3,1,0,completiva dentro de relativa,test,
