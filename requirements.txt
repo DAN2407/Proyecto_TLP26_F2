@@ -1,0 +1,10 @@
+nltk>=3.8
+spacy>=3.7
+google-genai
+matplotlib>=3.7
+# Segunda herramienta (HuggingFace). Necesita internet la primera vez para bajar BETO:
+transformers
+torch
+# Después de instalar:  python -m spacy download es_core_news_sm
+# Las versiones EXACTAS usadas quedan registradas dentro de cada log (campo "entorno").
+# Para el informe:  pip freeze > fase2/logs/pip_freeze.txt
