@@ -48,7 +48,7 @@ Proyecto_TLP26_F2/
 
 
 ### Qué es cada archivo
-- `fase2/dataset.csv`: corpus etiquetado (74 oraciones; niveles 1/2/3). Columnas: `esperado_gramatica` (salida esperada: aceptar/rechazar
+- `fase2/dataset.csv`: corpus etiquetado (60 oraciones; niveles 1/2/3). Columnas: `esperado_gramatica` (salida esperada: aceptar/rechazar
   según la gramática controlada), `gramatical_es` (juicio nativo), `upos_oro` (estructura esperada como etiquetas UPOS), `split` (dev/test).
 - `fase2/logs/*.jsonl`: salida cruda por oración, con `timestamp_utc` (o `timestamp_inicio/fin` en el LLM), versiones y parámetros.
 - `fase2/evaluar.py`: único lugar donde se calculan precisión, cobertura, rechazo correcto, clasificación de errores
